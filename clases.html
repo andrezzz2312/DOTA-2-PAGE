@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>
+				Dota Underlords
+			</title>
+			<link rel="stylesheet" type="text/css" href="paginaestilo.css">
+			<link rel="shortcut icon" type="image/png" href="images/Underlordslogo.png">
+		</head>
+		<body>
+			<header>
+				<img src="images/Underlordsheader.png">
+			</header>
+			<nav class="menu">
+				<ul class="nav">
+					<li>
+						<a href="index.html" target="_blank">Inicio</a>
+					</li>
+				</ul>
+				<ul class="nav">
+					<li>
+						<a href="#" >Recursos</a>						
+						<ul>
+							<li>
+								<a class="sub" href="imagenes.html" target="_blank">Imagenes</a>
+							</li>
+							<li>
+								<a class="sub" href="clases.html" target="_blank">Clases</a>
+							</li>
+						</ul>						
+					</li>
+				</ul>				
+				<ul class="nav">
+					<li>
+						<a href="contacto.html" target="_blank">Contáctanos</a>
+					</li>
+				</ul>
+				<ul class="nav">
+					<li>
+						<a href="como jugar.html" target="_blank">Como jugar</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="midbody">
+					<script type="text/javascript" language="javascript">
+						function visible(images)
+						{
+							var elemento = document.getElementsByClassName(images);
+							elemento[0].style.visibility = 'visible';
+						}
+						function mostrar_imagen(id) {
+						   img = document.getElementById(id);
+						   img.innerHTML = '<img src="images/assassin.png"/>';
+						}
+						function mostrar_imagen2(id) {
+						   img = document.getElementById(id);
+						   img.innerHTML = '<img  src="images/bloodhound.jpg"/>';
+						}
+						function mostrar_imagen3(id) {
+						   img = document.getElementById(id);						  
+						   img.innerHTML = '<img  src="images/warlock.jpg"/>';
+						}
+						function ocultar_imagen(id) {
+							img = document.getElementById(id);
+							img.innerHTML = '';
+						}
+						</script>
+				<section class="clases">
+					<ul>
+						<li>
+							<ul class="seleccion">
+								<li>
+									<input type="button" value="Assassin" onClick="javascript:visible('images');javascript:mostrar_imagen('imagen1');javascript:ocultar_imagen('imagen2');javascript:ocultar_imagen('imagen3');" />
+									
+								</li>
+							</ul>
+							<ul class="seleccion">
+								<li>
+									<input type="button" value="Bloodhound" onClick="javascript:visible('images');javascript:mostrar_imagen2('imagen2');javascript:ocultar_imagen('imagen1');javascript:ocultar_imagen('imagen3');" />
+								</li>
+							</ul>
+							<ul class="seleccion">
+								<li>
+									<input type="button" value="Warlock" onClick="javascript:visible('images');javascript:mostrar_imagen3('imagen3');javascript:ocultar_imagen('imagen1');javascript:ocultar_imagen('imagen2');" />
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="images">
+						<li id="imagen1">
+						</li>
+						<li id="imagen2">
+						</li>
+						<li id="imagen3">
+						</li>
+					</ul>														
+				</section>	
+				
+			</div>
+		</body>
+		<footer>
+			<ul class="info">
+				<li>
+					Autor: Andrez Ramirez.
+				</li>
+				<li>
+					N° Telf: 0995667722.
+				</li>
+				<li>
+					Correo: andrezzz2312@gmail.com
+				</li>
+			</ul>				
+			<ul class="info2">
+				<li>
+					
+					<a href='https://www.facebook.com/'>
+						<img src="images/facebook.svg">
+					</a>					
+				</li>
+				<li>
+					
+					<a href='https://www.instagram.com/?hl=en'>
+						<img src="images/instagram.svg">
+					</a>
+				</li>
+				<li>
+					
+					<a href='https://twitter.com/'>
+						<img src="images/twitter.svg">
+					</a>					
+				</li>
+			</ul>
+		</footer>
+	</html>
